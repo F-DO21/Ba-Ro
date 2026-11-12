@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="BA-RO everyday clothing and T-shirt collection." />
+  <title>BA-RO | Everyday Comfort. Your Own Style.</title>
+  <!--should we add icon here?-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+
+
+<!--If you edit header, please don't forget to update all the other HTML files too. header and footer are the most static part of the site.-->
+<header class="site-header" id="top">
+  <div class="site-container header-inner">
+    <a class="brand brand-header" href="index.html" aria-label="BA-RO home">
+      <span class="brand-logo" aria-hidden="true"><img src="images/header-baro-logo.svg" alt="BA-RO Logo"></span>
+    </a>
+
+    <!--Middle header links in a large screen-->
+    <nav class="primary-nav" aria-label="Main navigation">
+      <a href="index.html" aria-label="Go to Homepage">Home</a>
+      <a href="index.html#shop" aria-label="Go to Shop section">Shop</a>
+      <a href="about.html" aria-label="Go to About Us page">About</a>
+      <a href="contact.html" aria-label="Go to contact us page">Contact</a>
+    </nav>
+
+    <!-- Right non-interactive, extra features icons, no href="" yet. Vanish in mobile version-->
+    <div class="header-tools" aria-hidden="true">
+      <a href="#" class="header-tool" id="search-icon"><img src="images/header-search-icon.svg" alt="Search for an item."></a>
+      <a href="#" class="header-tool" id="account-icon"><img src="images/header-account-icon.svg" alt="Go to Accounts."></a>
+      <a href="#" class="header-tool" id="follow-icon"><img src="images/header-heart-icon.svg" alt="Follow us on social media."></a>
+      <a href="#" class="header-tool" id="dark-icon"><img src="images/header-dark-icon.svg" alt="Toogle on dark mode."></a>
+    </div>
+
+    <!--Middle header links go to right hamburger panel on small screens-->
+    <details class="mobile-nav">
+      <summary aria-label="Open navigation menu">Menu</summary>
+      <nav aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#shop">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+
+<main id="main-content">
+
+  <section class="home-hero" aria-labelledby="home-title">
+    <!--PLACEHOLDER!!! Replace this background with the homepage hero image. Just be sure the text remains readable over the image. -->
+    <div class="hero-image" aria-label="Homepage hero image"><img src="images/home-hero.jpg" alt="This is hero banner"></div>
+    <div class="hero-content">
+      <h1 id="home-title">Everyday Comfort.<br>Your Own Style.</h1>
+      <p>Fashion made simple. Style made personal.</p>
+    </div>
+  </section>
+
+  
+  <section class="featured-section site-container" id="shop" aria-labelledby="featured-title">
+    <div class="section-heading-row">
+      <h2 id="featured-title">Featured Products</h2>
+      <a class="btn btn-outline-ba-ro" href="product-dont-be-late.html">View Products</a>
+    </div>
+
+ 
+    <div class="product-card-grid">
+      <!--shirt 1-->
+      <article class="product-card">
+        <a class="product-card-image" href="product-dont-be-late.html" aria-label="View Don't Be Late Tee">
+          <!-- PLACEHOLDER!!! Add shirt image. Suggestion: just rename the new image with the placeholder filename -->
+          <img src="images/shirt-dont-be-late-front.jpg">
+        </a>
+        <h3><a href="product-dont-be-late.html">Don't Be Late Tee</a></h3>
+        <p class="product-card-price">&#8369; 399.99</p>
+        <a class="btn btn-small-outline" href="product-dont-be-late.html">View Product</a>
+      </article>
+
+      <!--shirt 2-->
+      <article class="product-card">
+        <a class="product-card-image" href="product-everyday-comfort.html" aria-label="View Everyday Comfort Tee">
+          <!--PLACEHOLDER-->
+          <img src="images/shirt-everyday-comfort-front.jpg" alt="Everyday Comfort Tee product image">
+        </a>
+        <h3><a href="product-everyday-comfort.html">Everyday Comfort Tee</a></h3>
+        <p class="product-card-price">&#8369; 499.99</p>
+        <a class="btn btn-small-outline" href="product-everyday-comfort.html">View Product</a>
+      </article>
+
+      <!--shirt 3-->
+      <article class="product-card">
+        <a class="product-card-image" href="product-do-good-work.html" aria-label="View Do Good Work Tee">
+          <!--PLACEHOLDER!-->
+          <img src="/images/shirt-do-good-work-front.jpg" alt="Do Good Work Tee product image">
+        </a>
+        <h3><a href="product-do-good-work.html">Do Good Work Tee</a></h3>
+        <p class="product-card-price">&#8369; 799.99</p>
+        <a class="btn btn-small-outline" href="product-do-good-work.html">View Product</a>
+      </article>
+    </div>
+  </section>
+
+
+  <!--lower quick about us section-->
+  <section class="home-about" aria-labelledby="home-about-title">
+    <div class="home-about-copy">
+      <h2 id="home-about-title">About BA-RO</h2>
+      <p>We believe the best everyday essentials are the ones that feel good, look good, and let you be yourself.</p>
+      <a class="text-link" href="about.html">Learn more about us</a>
+    </div>
+    <div class="home-about-image">
+      <!-- PLACEHOLDER!!! -->
+      <img src="images/about-page-image.jpg" aria-label="About BA-RO image placeholder">
+    </div>
+  </section>
+</main>
+
+
+
+
+
+<!--If you edit footer, please don't forget to update all the other HTML files because header and footer are the most static part of the site.-->
+<footer class="site-footer">
+  <div class="site-container footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand-block">
+        <a class="brand brand-footer" href="index.html" aria-label="BA-RO home">
+          <img src="images/footer-baro-logo.svg" class="brand-logo-stacked" aria-hidden="true">
+        </a>
+        <p class="footer-tagline">Fashion made simple.<br />Style made personal.</p>
+      </div>
+
+      <div class="footer-column">
+        <h2>Shop</h2>
+        <a href="index.html#shop">All products</a>
+      </div>
+
+      <div class="footer-column footer-contact">
+        <h2>Contact Us</h2>
+        <p>Call us: <span class="todo-inline">(09) 9019 9283</span></p>
+        <p>Email us: <a href="mailto:hello@baro.com.ph">hello@baro.com.ph</a></p>
+      </div>
+
+      <div class="footer-social" aria-label="Social media row">
+        <!-- No social links yet. update alt="" for accessibility -->
+      
+        <span aria-hidden="true">
+          <a href="#"><img src="images/footer-social-fblogo.svg" alt="facebook"></a>
+          <a href="#"><img src="images/footer-social-tiktok.svg"></a>
+          <a href="#"><img src="images/footer-social-x.svg"></a>
+          <a href="#"><img src="images/footer-social-insta.svg"></a>
+          <a href="#"><img src="images/footer-social-threads.svg"></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 BA-RO</p>
+      <nav aria-label="Footer navigation">
+        <a href="about.html">About Us</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+  <!--NO js file is added yet!!!-->
+  <script src="js/main.js"></script> 
+</body>
+</html>

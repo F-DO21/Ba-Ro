@@ -1,0 +1,20 @@
+name it: main.js
+
+just copy JavaScript Method #2 in Module 5.2 p.1 maybe with modifications?
+
+  contact form:
+    - Form: #contact-form
+    - Recipient: hello@baro.com.ph
+    - Required fields: full name, email, topic, and message
+
+  product order forms:
+    - Selector: .product-order-form
+    - Recipient: orders@baro.com.ph (separate email)
+    - Include: product name, selected color, selected size, quantity
+
+  after that:
+    1. enable the contact us and order now buttons.
+    2. validate required fields and quantity.
+    3. test the email subject, body and recipient.
+    4. test with an email app configured
+    5. check the browser console for any errors.

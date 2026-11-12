@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact BA-RO for product questions and customer support." />
+  <title>Contact BA-RO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+
+  <!--If you edit header, please don't forget to update all the other HTML files because header and footer are the most static part of the site.-->
+<heaedr class="site-header" id="top">
+  <div class="site-container header-inner">
+    <a class="brand brand-header" href="index.html" aria-label="BA-RO home">
+      <span class="brand-logo" aria-hidden="true"><img src="images/header-baro-logo.svg" alt="BA-RO Logo"></span>
+    </a>
+
+    <!--Middle header links in a large screen-->
+    <nav class="primary-nav" aria-label="Main navigation">
+      <a href="index.html" aria-label="Go to Homepage">Home</a>
+      <a href="index.html#shop" aria-label="Go to Shop section">Shop</a>
+      <a href="about.html" aria-label="Go to About Us page">About</a>
+      <a href="contact.html" aria-label="Go to contact us page">Contact</a>
+    </nav>
+
+    <!-- Right non-interactive, extra features icons, no href="" yet. Vanish in mobile version-->
+    <div class="header-tools" aria-hidden="true">
+      <a href="#" class="header-tool" id="search-icon"><img src="images/header-search-icon.svg" alt="Search for an item."></a>
+      <a href="#" class="header-tool" id="account-icon"><img src="images/header-account-icon.svg" alt="Go to Accounts."></a>
+      <a href="#" class="header-tool" id="follow-icon"><img src="images/header-heart-icon.svg" alt="Follow us on social media."></a>
+      <a href="#" class="header-tool" id="dark-icon"><img src="images/header-dark-icon.svg" alt="Toogle on dark mode."></a>
+    </div>
+
+    <!--Middle header links go to right hamburger panel on small screens-->
+    <details class="mobile-nav">
+      <summary aria-label="Open navigation menu">Menu</summary>
+      <nav aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#shop">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+
+<main id="main-content" class="contact-page site-container">
+  <h1 class="contact-title">We are here to help!</h1>
+  <div class="contact-layout">
+    <section class="contact-details" aria-labelledby="contact-details-title">
+      <h2 id="contact-details-title" class="visually-hidden">Contact details</h2>
+      <p>Email: <a href="mailto:hello@baro.com.ph">hello@baro.com.ph</a></p>
+      <p>Mobile: <span class="todo-inline">(09) 9019 9283</span></p>
+      <p>Landline: <span class="todo-inline">02-8123-4567</span></p>
+      <address>
+        BA-RO Clothing Company,<br>
+        Block 1, Lot 2, Mabini Street,<br>
+        Barangay San Jose,<br>
+        Pasig City, Metro Manila 1600
+      </address>
+      <div class="map" aria-label="Store location map">
+        <img src="images/contact-mock-live-map.jpg">
+      </div>
+    </section>
+
+
+    <section class="contact-form-panel" aria-label="Contact form">
+      <form id="contact-form" data-email-form="contact">
+        <div class="mb-3">
+          <label class="form-label" for="contact-name">Full name</label>
+          <input class="form-control" type="text" id="contact-name" name="name" autocomplete="name" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="contact-email">Email address</label>
+          <input class="form-control" type="email" id="contact-email" name="email" autocomplete="email" required />
+        </div>
+
+        <!--fieldset class="mb-3"-->
+          <label class="form-label">Choose a topic</label>
+          <select class="form-control" required>
+            <option value="">--Select a topic--</option>
+            <option value="about-store">About the store</option>
+            <option value="about-product">About a product</option>
+            <option value="about-site">About the website</option>
+            <option value="others">Others</option>
+          </select>
+        
+
+        <div class="mb-3">
+          <label class="form-label" for="contact-message">Message</label>
+          <textarea class="form-control" id="contact-message" name="message" rows="4" required></textarea>
+        </div>
+        <!--connect this form using the JS. idk-->
+        <button class="btn btn-olive w-100" type="button" disabled aria-describedby="contact-form-status">Contact Us</button>
+        <p class="form-setup-note" id="contact-form-status">Email form setup pending — connect the required Module 5.2 method before publishing. (Delete this line after setup)</p>
+      </form>
+    </section>
+
+    <aside class="contact-brand-panel" aria-label="Customer support information">
+      <img src="images/header-baro-logo.svg">
+      <div class="social-row" aria-hidden="true">
+        <a href="#"><img src="images/footer-social-fblogo.svg"></a>
+        <a href="#"><img src="images/footer-social-tiktok.svg"></a>
+        <a href="#"><img src="images/footer-social-x.svg"></a>
+        <a href="#"><img src="images/footer-social-insta.svg"></a>
+        <a href="#"><img src="images/footer-social-threads.svg"></a>
+      </div>
+      <p class="support-note">Customer support information</p>
+    </aside>
+  </div>
+  <div class="back-to-top-wrap"><a class="text-link" href="#top">Back to top</a></div>
+</main>
+
+<!--If you edit footer, please don't forget to update all the other HTML files because header and footer are the most static part of the site.-->
+<footer class="site-footer">
+  <div class="site-container footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand-block">
+        <a class="brand brand-footer" href="index.html" aria-label="BA-RO home">
+          <img src="images/footer-baro-logo.svg" class="brand-logo-stacked" aria-hidden="true">
+        </a>
+        <p class="footer-tagline">Fashion made simple.<br />Style made personal.</p>
+      </div>
+
+      <div class="footer-column">
+        <h2>Shop</h2>
+        <a href="index.html#shop">All products</a>
+      </div>
+
+      <div class="footer-column footer-contact">
+        <h2>Contact Us</h2>
+        <p>Call us: <span class="todo-inline">(09) 9019 9283</span></p>
+        <p>Email us: <a href="mailto:hello@baro.com.ph">hello@baro.com.ph</a></p>
+      </div>
+
+      <div class="footer-social" aria-label="Social media row">
+        <!-- No social links yet. -->
+      
+        <span aria-hidden="true">
+          <a href="#"><img src="images/footer-social-fblogo.svg"></a>
+          <a href="#"><img src="images/footer-social-tiktok.svg"></a>
+          <a href="#"><img src="images/footer-social-x.svg"></a>
+          <a href="#"><img src="images/footer-social-insta.svg"></a>
+          <a href="#"><img src="images/footer-social-threads.svg"></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 BA-RO</p>
+      <nav aria-label="Footer navigation">
+        <a href="about.html">About Us</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+  <!--NO js file is added yet!!!-->
+  <script src="js/main.js"></script> 
+</body>
+</html>
