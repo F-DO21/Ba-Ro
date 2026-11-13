@@ -1,8 +1,8 @@
-// main js file
-
+// main.js file
 // // js/main.js
-// this part is for the contact us page
+//Contact page.js section 
 
+//This is the Baro address that we will see in the Form
 const INQUIRY_ADDRESS = "hello@baro.com.ph";
 const contactForm = document.querySelector("#contact-form");
 
@@ -15,7 +15,7 @@ function buildContactMailto(subject, body) {
   );
 }
 
-// this block will only run if its in the contact page else it proceeds further down
+// this block will only run if it's on the contact page; otherwise, it proceeds further down
 if (contactForm) {
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -25,7 +25,7 @@ if (contactForm) {
     const text = contactForm.querySelector("#contact-message").value.trim();
     const topic = topicSelect.value === "" ? "" : topicSelect.options[topicSelect.selectedIndex].text;
 
-    // it check each field of input and alerts the user if somethings missing, it also checks if the email is valid
+    //It checks each input field and alerts the user if something is missing; it also checks if the email is valid.
     if (name === "" || email === "" || topic === "" || text === "") {
       alert("Please fill in your full name, email, topic, and message.");
       return;
@@ -49,4 +49,4 @@ if (contactForm) {
   });
 }
 
-// i've only done the js file for the contact us page
+//I've only done the JS file for the contact us page haven't really started with the product page
