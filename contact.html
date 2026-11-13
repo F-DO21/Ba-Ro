@@ -72,7 +72,8 @@
 
 
     <section class="contact-form-panel" aria-label="Contact form">
-      <form id="contact-form" data-email-form="contact">
+      <!--I added action"#" and method="post" in form -->
+      <form id="contact-form" action="#" method="post" data-email-form="contact">
         <div class="mb-3">
           <label class="form-label" for="contact-name">Full name</label>
           <input class="form-control" type="text" id="contact-name" name="name" autocomplete="name" required />
@@ -83,8 +84,9 @@
         </div>
 
         <!--fieldset class="mb-3"-->
-          <label class="form-label">Choose a topic</label>
-          <select class="form-control" required>
+          <!-- Added for="contact-topic" and id/name for the javascript -->
+          <label class="form-label" for="contact-topic">Choose a topic</label>
+          <select class="form-control" id="contact-topic" name="topic" required>
             <option value="">--Select a topic--</option>
             <option value="about-store">About the store</option>
             <option value="about-product">About a product</option>
@@ -97,9 +99,8 @@
           <label class="form-label" for="contact-message">Message</label>
           <textarea class="form-control" id="contact-message" name="message" rows="4" required></textarea>
         </div>
-        <!--connect this form using the JS. idk-->
-        <button class="btn btn-olive w-100" type="button" disabled aria-describedby="contact-form-status">Contact Us</button>
-        <p class="form-setup-note" id="contact-form-status">Email form setup pending — connect the required Module 5.2 method before publishing. (Delete this line after setup)</p>
+        <!-- removed the disabled, ngl idk what else to add besides the alt text label i guess?  -->
+        <button class="btn btn-olive w-100" type="submit">Contact Us</button>
       </form>
     </section>
 
@@ -166,7 +167,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
-  <!--NO js file is added yet!!!-->
-  <script src="js/main.js"></script> 
+  <!-- js/contact.js is this page's own script. defer runs it after the page is read (Module 5.2, Method 3). -->
+  <script src="js/main.js" defer></script> 
 </body>
 </html>
